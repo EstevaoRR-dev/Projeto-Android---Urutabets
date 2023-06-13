@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Cor de fundo da borda -->
+    <corners android:radius="30dp" /> <!-- Raio dos cantos da borda, defina 0dp para bordas retas -->
+
+</shape>

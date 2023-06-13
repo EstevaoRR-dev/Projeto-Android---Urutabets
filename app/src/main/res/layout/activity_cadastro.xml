@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    tools:context=".Cadastro">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urutabets"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/nomeCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_texto"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/sobrenomeCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_texto"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Sobrenome"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/data_nascCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_texto"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Data nascimento"
+        android:inputType="date"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/telefoneCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_texto"
+        android:drawableLeft="@drawable/baseline_phone_enabled_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/emailCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_texto"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textWebEmailAddress|textPersonName"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/senhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_texto"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPersonName|textPassword"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <Button
+        android:id="@+id/botaoCadastrarCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_botao"
+        android:onClick="validarCampos"
+        android:text="Cadastrar"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

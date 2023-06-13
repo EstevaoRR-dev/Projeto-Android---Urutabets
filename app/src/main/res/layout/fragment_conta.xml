@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContaFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3f5f4"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/titulo_dados_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dados do Usuário"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="19dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_nome_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextColor="@color/black"
+                android:hint="Nome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo_dados_user"
+                app:startIconDrawable="@drawable/baseline_account_circle_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/conta_nomeUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:text="Nome de Usuario" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_sobrenome_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextColor="@color/black"
+                android:hint="Sobrenome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_nome_usuario"
+                app:startIconDrawable="@drawable/baseline_family_restroom_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/conta_sobrenome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:text="Sobrenome" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_email_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextColor="@color/black"
+                android:hint="E-mail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_sobrenome_usuario"
+                app:startIconDrawable="@drawable/baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/conta_emailUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:text="jose_damanga@gmail.com" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_telefone_usuario"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextColor="@color/black"
+                android:hint="Telefone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_email_usuario"
+                app:startIconDrawable="@drawable/baseline_local_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/conta_telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="(00)00000-0000"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_data_nasc_usuario"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:hintTextColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:hint="Data de Nascimento"
+                app:layout_constraintStart_toEndOf="@+id/text_telefone_usuario"
+                app:layout_constraintTop_toBottomOf="@+id/text_email_usuario"
+                app:startIconDrawable="@drawable/baseline_calendar_month_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/conta_dataNasc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="00/00/00"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

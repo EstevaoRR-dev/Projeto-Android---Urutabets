@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@+id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="br.com.testesbottomnav.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/apostas"
+        android:name="br.com.testesbottomnav.fragments.Apostas"
+        android:label="fragment_apostas"
+        tools:layout="@layout/fragment_apostas" />
+    <fragment
+        android:id="@+id/jogos"
+        android:name="br.com.testesbottomnav.fragments.Jogos"
+        android:label="fragment_jogos"
+        tools:layout="@layout/fragment_jogos" />
+    <fragment
+        android:id="@+id/adminArea"
+        android:name="br.com.testesbottomnav.fragments.AdminPage"
+        android:label="fragment_admin_page"
+        tools:layout="@layout/fragment_admin_page" />
+</navigation>

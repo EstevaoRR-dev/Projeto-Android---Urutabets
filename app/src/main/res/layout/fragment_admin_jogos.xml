@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C4040529"
+    tools:context=".fragments.AdminJogos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Area"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textCadastroClube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="5dp"
+                        android:text="Cadastrar Clubes"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageUpload_clube"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/textCadastroClube"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/borders" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nome"
+                        android:layout_marginTop="40dp"
+                        android:layout_toEndOf="@+id/imageUpload_clube"
+                        android:layout_alignParentTop="true"
+                        app:startIconDrawable="@drawable/baseline_sports_soccer_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_nomeClube"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nome do Clube"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_posicao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Posicao"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/imageUpload_clube"
+                        android:layout_below="@+id/textLayout_nome"
+                        app:startIconDrawable="@drawable/baseline_flag_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_posicao"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="Posição no campeonato"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/botaoUpload"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageUpload_clube"
+                        android:text="Escolher imagem"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/textFazerUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fazer Upload"
+                        android:textColor="#F30909"
+                        android:textStyle="bold"
+                        android:textSize="23dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_toEndOf="@+id/botaoUpload"
+                        android:layout_below="@+id/textLayout_posicao"
+                        />
+
+                    <Button
+                        android:id="@+id/botaoUpload2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/baseline_system_update_alt_24"
+                        android:layout_below="@+id/textLayout_posicao"
+                        android:layout_toEndOf="@+id/textFazerUpload"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="15dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView_titulo_cadastrarPartida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cadastrar Partidas"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/image_time_a_admin"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/textView_titulo_cadastrarPartida"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/borders" />
+
+                    <ImageView
+                        android:id="@+id/image_x_admin"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/img_x"
+                        android:layout_below="@+id/textView_titulo_cadastrarPartida"
+                        android:layout_toEndOf="@id/image_time_a_admin"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="30dp"/>
+
+                    <ImageView
+                        android:id="@+id/image_time_b_admin"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/textView_titulo_cadastrarPartida"
+                        android:layout_toEndOf="@+id/image_x_admin"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/borders" />
+
+                    <Spinner
+                        android:id="@+id/spinner_timeA_admin"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_time_a_admin"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner_timeB_admin"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spinner_timeA_admin"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editText_hora_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hora da partida"
+                        android:layout_below="@id/image_time_a_admin"
+                        android:layout_toEndOf="@+id/spinner_timeA_admin"/>
+
+                    <EditText
+                        android:id="@+id/editText_data_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="data da partida"
+                        android:layout_marginTop="1dp"
+                        android:layout_below="@id/spinner_timeA_admin"
+                        android:layout_toEndOf="@+id/spinner_timeA_admin"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_liga_admin"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_timeB_admin"
+                        android:layout_alignParentStart="true"
+                        android:entries="@array/spinner_options_7"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <Button
+                        android:id="@+id/button_cadastrar_partida"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Cadastrar partida"
+                        android:layout_below="@+id/spinner_liga_admin"
+                        android:layout_alignParentStart="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/text_remover_partida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remover partidas"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="8dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/text_partidas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Partidas:"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@+id/text_remover_partida"
+                        android:layout_alignParentStart="true"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerNomePartidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/text_partidas"
+                        android:layout_alignParentStart="true"/>
+
+                    <Button
+                        android:id="@+id/button_remover_partida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remover Partida"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/spinnerNomePartidas"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

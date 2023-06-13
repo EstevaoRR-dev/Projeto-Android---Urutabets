@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C4040529"
+       >
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp">
+
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    >
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView"
+                        android:layout_width="180dp"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="14dp"
+                        app:cardBackgroundColor="#faf2f1"
+                        app:cardCornerRadius="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/futebol_pic"
+                                />
+
+                            <TextView
+                                android:id="@+id/text_brasi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Brasileirão Série A"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="8dp"/>
+
+                            <TextView
+                                android:id="@+id/descri_brasi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Todos os jogos"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="10dp"/>
+
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="180dp"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="#faf2f1"
+                        app:cardCornerRadius="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/nba_art"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NBA"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="8dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="O melhor da NBA"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="10dp"/>
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="180dp"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="14dp"
+                        app:cardBackgroundColor="#faf2f1"
+                        app:cardCornerRadius="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/apostas_pic"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apostas"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="8dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mostre o que sabe"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="10dp"/>
+
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="180dp"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="#faf2f1"
+                        app:cardCornerRadius="15dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/news_pic"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Notícias"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="8dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Notícias no mundo"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:layout_marginBottom="10dp"/>
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </GridLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/noticias_titulo"
+                    android:layout_width="261dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gridLayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="73dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginEnd="73dp"
+                    android:text="Noticias do Momento"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_noticias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/noticias_titulo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    tools:listitem="@layout/item_view_noticias"/>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

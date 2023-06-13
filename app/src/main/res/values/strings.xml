@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">TestesBottomNav</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_options">
+
+        <item>Cartões</item>
+        <item>Mais de 3</item>
+        <item>Mais de 5</item>
+        <item>Mais de 8</item>
+        <item>Mais de 11</item>
+
+    </string-array>
+
+    <string-array name="spinner_options_2">
+
+        <item>Expulsões</item>
+        <item>Mais de 1</item>
+        <item>Mais de 3</item>
+        <item>Mais de 6</item>
+        <item>Mais de 8</item>
+
+    </string-array>
+
+    <string-array name="spinner_options_3">
+
+        <item>Escanteios</item>
+        <item>Mais de 3</item>
+        <item>Mais de 6</item>
+        <item>Mais de 9</item>
+        <item>Mais de 12</item>
+
+    </string-array>
+
+    <string-array name="spinner_options_4">
+
+        <item>3 pts</item>
+        <item>Mais de 7</item>
+        <item>Mais de 13</item>
+        <item>Mais de 19</item>
+        <item>Mais de 25</item>
+
+    </string-array>
+
+    <string-array name="spinner_options_5">
+
+        <item>Ejections</item>
+        <item>Mais de 1</item>
+        <item>Mais de 3</item>
+        <item>Mais de 5</item>
+
+    </string-array>
+
+    <string-array name="spinner_options_6">
+
+        <item>Lance Livre</item>
+        <item>Mais de 5</item>
+        <item>Mais de 10</item>
+        <item>Mais de 15</item>
+        <item>Mais de 20</item>
+
+    </string-array>
+
+    <string-array name="spinner_options_7">
+        <item>NBA</item>
+        <item>Brasileirão</item>
+    </string-array>
+</resources>

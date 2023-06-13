@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C4040529"
+    tools:context=".fragments.AdminNoticias">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Area"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textCadastroNoticia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Cadastrar Notícias"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageUpload_noticia"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/textCadastroNoticia"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/borders" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_nomeNoticia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Titulo"
+                        android:layout_marginTop="40dp"
+                        android:layout_toEndOf="@+id/imageUpload_noticia"
+                        android:layout_alignParentTop="true"
+                        app:startIconDrawable="@drawable/baseline_sports_soccer_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_tituloNoticia"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_posicao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Descrição"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/imageUpload_noticia"
+                        android:layout_below="@+id/textLayout_nomeNoticia"
+                        app:startIconDrawable="@drawable/baseline_flag_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_descricaoNoticia"
+                            android:layout_width="260dp"
+                            android:layout_height="55dp"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Link da notícia"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_below="@+id/imageUpload_noticia"
+                        app:startIconDrawable="@drawable/baseline_flag_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_urlNoticia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/botaoUploadNoticia"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textLayout_link"
+                        android:text="Escolher imagem"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/textFazerUploadNoticia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fazer Upload"
+                        android:textColor="#F30909"
+                        android:textStyle="bold"
+                        android:textSize="23dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_toEndOf="@+id/botaoUploadNoticia"
+                        android:layout_below="@+id/textLayout_link"
+                        />
+
+                    <Button
+                        android:id="@+id/botaoUpload2Noticia"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/baseline_system_update_alt_24"
+                        android:layout_below="@+id/textLayout_link"
+                        android:layout_toEndOf="@+id/textFazerUploadNoticia"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/textRemoverAtualizarNoticia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Atualizar ou remover notícias"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_nomeNoticias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@+id/textRemoverAtualizarNoticia"
+                        android:layout_alignParentStart="true"/>
+
+
+                    <ImageView
+                        android:id="@+id/imageNoticia"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/spinner_nomeNoticias"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/borders" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_nomeNoticiaAddUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Titulo"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@+id/imageNoticia"
+                        android:layout_below="@+id/spinner_nomeNoticias"
+                        app:startIconDrawable="@drawable/baseline_sports_soccer_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_tituloNoticiaAddUp"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_descricao_addUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Descrição"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/imageNoticia"
+                        android:layout_below="@+id/textLayout_nomeNoticiaAddUp"
+                        app:startIconDrawable="@drawable/baseline_flag_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_descricaoNoticiaAddUp"
+                            android:layout_width="260dp"
+                            android:layout_height="55dp"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textLayout_linkAddUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Link da notícia"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_below="@+id/imageNoticia"
+                        app:startIconDrawable="@drawable/baseline_flag_24"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textEdit_urlNoticiaUppAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/botaoAtualizarNoticia"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textLayout_linkAddUp"
+                        android:text="Salvar"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+
+                    <Button
+                        android:id="@+id/botaoRemoverNoticia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Remover Noticia"
+                        android:layout_below="@+id/textLayout_linkAddUp"
+                        android:layout_toEndOf="@+id/botaoAtualizarNoticia"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
