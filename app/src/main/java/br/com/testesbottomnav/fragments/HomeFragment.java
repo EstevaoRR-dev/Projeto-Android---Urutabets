@@ -191,10 +191,13 @@ public class HomeFragment extends Fragment{
                     }
                 });
 
-                recyclerView.setHasFixedSize(true);
-                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-                recyclerView.setNestedScrollingEnabled(false);
-                recyclerView.setAdapter(adapter);
+                if (getContext() != null){
+                    recyclerView.setHasFixedSize(true);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                    recyclerView.setNestedScrollingEnabled(false);
+                    recyclerView.setAdapter(adapter);
+                }
+
 
             }
 

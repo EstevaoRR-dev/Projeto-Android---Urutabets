@@ -167,6 +167,7 @@ public class Apostas extends Fragment {
         db = FirebaseFirestore.getInstance();
         usuariosRef = db.collection("usuarios").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
 
+        //Listener que vai sempre atualizar o saldo do usuário
         usuariosRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -184,6 +185,7 @@ public class Apostas extends Fragment {
             }
         });
 
+        //Ação do botão depositar
         botaoDepositar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

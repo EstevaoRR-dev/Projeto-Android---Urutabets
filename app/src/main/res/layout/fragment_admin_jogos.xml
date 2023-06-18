@@ -81,7 +81,7 @@
                             android:id="@+id/textEdit_nomeClube"
                             android:layout_width="260dp"
                             android:layout_height="wrap_content"
-                            android:text="Nome do Clube"/>
+                            />
 
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -101,8 +101,7 @@
                             android:id="@+id/textEdit_posicao"
                             android:layout_width="260dp"
                             android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:text="Posição no campeonato"/>
+                            android:inputType="number" />
 
 
                     </com.google.android.material.textfield.TextInputLayout>
